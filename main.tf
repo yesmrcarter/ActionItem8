@@ -9,7 +9,7 @@ resource "aws_instance" "redhat_instance" {
   key_name = "TKP"
   vpc_security_group_ids = [aws_security_group.Jenkins_setup.id]
   tags = {
-    Name = "Carters-RHEL" 
+    Name = "Carters-RHEL-instance" 
   }
 }
 
@@ -20,6 +20,6 @@ resource "aws_instance" "ubuntu_instance" {
   key_name = "TKP"
   vpc_security_group_ids = [aws_security_group.Jenkins_setup.id]
   tags = {
-    Name = "Carters-Ubuntu"
+    Name = "Carters-Ubuntu-instance"
   }
 }
